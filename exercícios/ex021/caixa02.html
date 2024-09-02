@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: gray;
+            text-align: justify;
+            margin: 0;
+        }
+
+        h2 {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        header {
+            background-color: white;
+            margin: 10px 5px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        
+        nav {
+            background-color: gray;
+            padding: 3px;
+            box-shadow: 4px 5px 12px rgba(0, 0, 0, 0.393);;
+            border-radius: 9px;
+        }
+
+        nav > a {
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+            font-weight: bold;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+            color: darkblue;
+        }
+
+        main {
+            background-color: white;
+            padding: 5px;
+            margin: 10px 5px;
+            border-radius: 5px;
+        }
+
+        #assuntos {
+            color: rgb(61, 61, 61);
+        }
+
+        #noticias {
+            background-color: lightgray;
+            padding: 5px;
+            margin: 1px;
+            border-radius: 5px;
+        }
+
+        aside {
+            background-color: darkgray;
+            font-family: 'Times New Roman', Times, serif;
+            border-radius: 5px;
+            margin: 0px 15px;
+            padding-left: 5px;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            padding: 1px;
+            text-align: center;
+        }
+
+        footer > p {
+            margin: 0;
+            padding: 6px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Esportes Política Tecnologia</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore possimus nam ad soluta veritatis vero quasi eum dolorum ratione accusamus! Eligendi asperiores repudiandae totam consectetur quas aliquid deserunt perspiciatis suscipit.</p>
+                <aside>
+                    <p>Artigo escrito por ...</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Pablo Henrique</p>
+    </footer>
+</body>
+</html>
