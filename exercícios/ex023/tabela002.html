@@ -11,6 +11,8 @@
 
         table {
             border-collapse: collapse;
+            width: 600px;
+            position: relative;
         }
 
         th, td {
@@ -18,8 +20,26 @@
             padding: 8px;
         }
 
+        caption {
+            font-weight: bold;
+            font-size: 1.5em;
+            padding: 10px;
+            background-color: rgb(0, 0, 0);
+            color: white;
+        }
+
         thead, tfoot {
-            background-color: lightgray;
+            background-color: rgb(156, 156, 156);
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1;
+            background-color: rgb(156, 156, 156)
+        }
+
+        tbody > tr:nth-child(2n){
+            background-color: rgb(224, 224, 224);
         }
 
         .num {
@@ -33,11 +53,14 @@
 </head>
 <body>
     <table>
+        <caption>
+            População das Unidades Federativas
+        </caption>
         <thead>
-            <th>Posição</th>
-            <th>Estado</th>
-            <th>População <br> (estimativa 2024)</th>
-            <th>País comparável <br> (habitantes)</th>
+            <th scope="col">Posição</th>
+            <th scope="col">Estado</th>
+            <th scope="col">População <br> (estimativa 2024)</th>
+            <th scope="col">País comparável <br> (habitantes)</th>
         </thead>
         <tbody>
             <tr>
@@ -71,10 +94,8 @@
                 <td class="center">Tunísia <br> (11 818 619)</td>
             </tr>
         <tfoot>
-            <td></td>
-            <th>Total de habitantes</th>
+            <th scope="row" colspan="2">Total de habitantes</th>
             <td class="num"><strong>111.190.739</strong></td>
-            <td></td>
         </tfoot>
     </table>
 </body>
